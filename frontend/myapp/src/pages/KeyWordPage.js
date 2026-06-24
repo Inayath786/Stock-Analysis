@@ -19,7 +19,7 @@ function KeywordPage() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:4000/api/keywords", {
+      const res = await axios.post("https://stock-analysis-backend-xvm4.onrender.com/api/keywords", {
         text,
       });
 

@@ -8,7 +8,7 @@ function ScreenerPage() {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async () => {
-    let url = "http://localhost:4000/api/screener";
+    let url = "https://stock-analysis-backend-xvm4.onrender.com/api/screener";
 
     const params = [];
     if (peBelow) params.push(`peBelow=${peBelow}`);

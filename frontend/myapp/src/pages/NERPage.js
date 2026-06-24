@@ -12,7 +12,7 @@ function NERPage() {
       setError("");
       setEntities(null);
 
-      const res = await axios.post("http://localhost:4000/api/ner", {
+      const res = await axios.post("https://stock-analysis-backend-xvm4.onrender.com/api/ner", {
         text,
       });
 

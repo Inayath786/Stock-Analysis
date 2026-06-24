@@ -13,7 +13,7 @@ function MarketNewsPage() {
     setNews(null);
 
     try {
-      const res = await axios.get("http://localhost:4000/api/market-news");
+      const res = await axios.get("https://stock-analysis-backend-xvm4.onrender.com/api/market-news");
       console.log("NEWS DATA", res.data);
       setNews(res.data);
     } catch (err) {

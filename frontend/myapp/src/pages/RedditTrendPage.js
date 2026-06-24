@@ -18,7 +18,7 @@ function RedditTrends() {
     setPosts([]);
 
     try {
-      const res = await fetch(`http://localhost:4000/company-news?symbol=${encodeURIComponent(keyword)}`);
+      const res = await fetch(`https://stock-analysis-backend-xvm4.onrender.com/company-news?symbol=${encodeURIComponent(keyword)}`);
       const data = await res.json();
 
       if (data.error) {

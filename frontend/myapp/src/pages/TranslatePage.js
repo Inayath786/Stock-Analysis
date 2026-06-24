@@ -19,7 +19,7 @@ const TranslatePage = () => {
     setTranslation("");
 
     try {
-      const res = await axios.post("http://localhost:4000/api/translate", {
+      const res = await axios.post("https://stock-analysis-backend-xvm4.onrender.com/api/translate", {
         text,
       });
 

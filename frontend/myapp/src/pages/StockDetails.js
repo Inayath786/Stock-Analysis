@@ -43,7 +43,7 @@ function StockDetails() {
 
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:4000/api/stock/${symbol}`);
+      const res = await axios.get(`https://stock-analysis-backend-xvm4.onrender.com/api/stock/${symbol}`);
       setData(res.data);
     } catch (err) {
       console.error(err);

@@ -93,7 +93,7 @@ const IndianStockDetails = () => {
     setData(null);
     try {
       const res = await axios.get(
-        `http://localhost:4000/api/stocks/${symbol}`
+        `https://stock-analysis-backend-xvm4.onrender.com/api/stocks/${symbol}`
       );
       setData(res.data);
     } catch (err) {

@@ -26,7 +26,7 @@ function ComparePage() {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:4000/api/compare?symbols=${symbols}`
+        `https://stock-analysis-backend-xvm4.onrender.com/api/compare?symbols=${symbols}`
       );
       const result = await res.json();
       setData(result.results || []);

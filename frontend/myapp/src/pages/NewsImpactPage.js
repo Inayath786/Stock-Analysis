@@ -14,7 +14,7 @@ function NewsImpactPage() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:4000/api/news-impact", {
+      const response = await fetch("https://stock-analysis-backend-xvm4.onrender.com/api/news-impact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -19,7 +19,7 @@ function SummarizePage() {
     setSummary("");
 
     try {
-      const res = await axios.post("/api/summarize", { text });
+      const res = await axios.post("https://stock-analysis-backend-xvm4.onrender.com/api/summarize", { text });
       setSummary(res.data.summary);
     } catch (err) {
       console.error(err.response?.data || err.message);
